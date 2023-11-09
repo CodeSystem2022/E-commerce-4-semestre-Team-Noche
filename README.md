@@ -16,5 +16,20 @@ Integrantes del TEAM NOCHE:
 • [Suarez, Carlos Hernan](https://github.com/Hernan-DOS)   
 • [Videla, Franco](https://github.com/odin1301)
 
-<center><img src="tiger%20gym.png"></center>
+<img src="img-readme/tiger%20gym.png">
+
+<a href="https://github.com/CodeSystem2022/E-commerce-4-semestre-Team-Noche/blob/main/img-readme/BRIEFING%20TEAM%20NOCHE.pdf"><h1>Brief del proyecto</h1></a>
+<hr/>
+<h2>Capturas</h2>
+<hr/>
+HOME
+<img src="img-readme/readme1.png">
+<hr/>
+SLIDE de PRODUCTOS
+<img src="img-readme/readme2.png">
+<hr/>
+CARRITO
+<img src="img-readme/readme4.png">
+<hr/>
+
 
