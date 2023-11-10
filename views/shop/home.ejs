@@ -1,0 +1,194 @@
+<%- include ../partials/header %> <%- include ../partials/categories-navbar%>
+ 
+<div class="logo-container">
+  <img class="logo" src="/images/logo.jpg" alt="Logo Tiger gym" />
+</div>
+ <div class="coment">
+  <p>¡Bienvenido a Tiger Gym, el gimnasio que nunca duerme! Somos una marca joven y en crecimiento con múltiples sucursales, y estamos dedicados a brindarte un espacio de entrenamiento de alta calidad disponible las 24 horas, los 365 días del año.</p>
+    <br>
+    <p>En Tiger Gym, creemos en la importancia de la flexibilidad y la comodidad en tu viaje de acondicionamiento físico. No importa si eres un madrugador, un trasnochador o si simplemente prefieres entrenar en tus momentos libres, estamos aquí para ti. Nuestro compromiso es ofrecerte un gimnasio que se adapte a tu horario, no al revés.</p>
+    <br>
+    <p>Nuestras modernas instalaciones están equipadas con equipos de vanguardia, áreas de entrenamiento funcional y profesionales amigables y expertos que te guiarán en cada paso de tu viaje de acondicionamiento físico. En Tiger Gym, no solo construyes músculos, sino también amistades y una comunidad de personas comprometidas con un estilo de vida activo y saludable.</p>
+    <br>
+    <p>Ya sea que estés buscando perder peso, ganar fuerza o mejorar tu salud en general, en Tiger Gym, estamos listos para ayudarte a alcanzar tus metas. Únete a nosotros y experimenta la diferencia de un gimnasio que trabaja para ti, las 24 horas del día, los 365 días del año.</p>
+    <br>
+    <p>¡Tiger Gym, donde tu éxito no conoce límites!</p>
+  </div>
+<hr class="gradient-style" />
+
+<!--Nuestros productos -->
+<div class="container mb-4 mt-4">
+  <!--Carousel-->
+  <div
+    id="products-carousel"
+    class="carousel slide carousel-multi-item"
+    data-ride="carousel"
+  >
+    <!--Control-->
+    <div class="controls-top mb-2">
+      <div class="row">
+        <div class="col-8">
+          <h3>Nuestros Productos</h3>
+        </div>
+        <div class="col-4">
+          <div class="controls float-right hidden-xs">
+            <a
+              class="left fa fa-chevron-left btn btn"
+              href="#products-carousel"
+              data-slide="prev"
+            ></a
+            ><a
+              class="right fa fa-chevron-right btn"
+              href="#products-carousel"
+              data-slide="next"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Control-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!--Primer slide-->
+      <div class="carousel-item active">
+        <div class="row">
+          <% for(let i=0; i<3; i++) { %>
+          <div class="col-md-4 product-index-box">
+            <div class="single-product d-flex flex-column h-100">
+              <a
+                class="title-link"
+                href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+              >
+                <img
+                  src="<%= products[i].imagePath %>"
+                  class="img-fluid"
+              /></a>
+              <div class="product-info">
+                <a
+                  class="title-link"
+                  href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+                >
+                  <h6 class="mt-2 mb-2"><%= products[i].title %></h6></a
+                >
+                <div class="price">$<%= products[i].price %></div>
+              </div>
+              <% if(products[i].available) {%>
+              <a
+                href="/add-to-cart/<%=products[i]._id%>"
+                class="btn btn-block btn-secondary button-style mt-auto mb-2"
+              >
+                Agregar al carrito
+              </a>
+              <% } else { %>
+              <a
+                href="#"
+                class="btn btn-block btn-danger button-style-danger mt-2 mb-2"
+              >
+                Agotado
+              </a>
+              <%} %>
+            </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+      <!--/.Primer slide-->
+
+      <!--Segundo slide-->
+      <div class="carousel-item">
+        <div class="row">
+          <% for(let i=3; i<6; i++) { %>
+          <div class="col-md-4 product-index-box">
+            <div class="single-product d-flex flex-column h-100">
+              <a
+                class="title-link"
+                href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+              >
+                <img
+                  src="<%= products[i].imagePath %>"
+
+                  class="img-fluid"
+              /></a>
+              <div class="product-info">
+                <a
+                  class="title-link"
+                  href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+                >
+                  <h6 class="mt-2 mb-2"><%= products[i].title %></h6></a
+                >
+                <div class="price">$<%= products[i].price %></div>
+              </div>
+              <% if(products[i].available) {%>
+              <a
+                href="/add-to-cart/<%=products[i]._id%>"
+                class="btn btn-block btn-secondary button-style mt-auto mb-2"
+              >
+              Agregar al carrito
+              </a>
+              <% } else { %>
+              <a
+                href="#"
+                class="btn btn-block btn-danger button-style-danger mt-2 mb-2"
+              >
+                Agotado
+              </a>
+              <%} %>
+            </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+      <!--/.Segundo slide-->
+
+      <!--Tercer slide-->
+      <div class="carousel-item">
+        <div class="row">
+          <% for(let i=6; i<9; i++) { %>
+          <div class="col-md-4 product-index-box">
+            <div class="single-product d-flex flex-column h-100">
+              <a
+                class="title-link"
+                href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+              >
+                <img
+                  src="<%= products[i].imagePath %>"
+                  class="img-fluid"
+              /></a>
+              <div class="product-info">
+                <a
+                  class="title-link"
+                  href="/products/<%=products[i].category.slug%>/<%=products[i]._id%>"
+                >
+                  <h6 class="mt-2 mb-2"><%= products[i].title %></h6></a
+                >
+                <div class="price">$<%= products[i].price %></div>
+              </div>
+              <% if(products[i].available) {%>
+              <a
+                href="/add-to-cart/<%=products[i]._id%>"
+                class="btn btn-block btn-secondary button-style mt-auto mb-2"
+              >
+              Agregar al carrito
+              </a>
+              <% } else { %>
+              <a
+                href="#"
+                class="btn btn-block btn-danger button-style-danger mt-2 mb-2"
+              >
+                Agotado
+              </a>
+              <%} %>
+            </div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+      <!--/.Tercer slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel-->
+</div>
+
+<%- include ../partials/footer %>
