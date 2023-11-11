@@ -20,6 +20,21 @@ Integrantes del TEAM NOCHE:
 
 <a href="https://github.com/CodeSystem2022/E-commerce-4-semestre-Team-Noche/blob/main/img-readme/BRIEFING%20TEAM%20NOCHE.pdf"><h1>Brief del proyecto</h1></a>
 <hr/>
+<h2>Configuraciones necesarias para el proyecto:</h2>
+<br>
+<h4>Crear un archivo .env y crear las siguientes variables de entorno:</h4>
+<br>
+MONGO_URI=mongodb+srv://Usuario:UMTs66E6mu28OaAM@cluster0.m2136tx.mongodb.net/mytestdb?retryWrites=true&w=majority
+<br>
+SESSION_SECRET=asd123esdawe1513
+<br>
+STRIPE_PRIVATE_KEY=sk_test_51OB3v1G3tCEFHGjmT7FsHmTfUfUIyDCH2Y7sbMijsh0FFEdVuYrvpPI1r0hgptRxW6QYHcmixx0giOFZIYivuAKq00d7BXJi7h
+<br>
+GMAIL_EMAIL=pruebas.team.noche@gmail.com
+<br>
+GMAIL_PASSWORD=jjhw kzwt qyde esjb
+<br>
+<hr/>
 <h2>Capturas</h2>
 <hr/>
 HOME
