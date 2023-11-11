@@ -22,15 +22,22 @@ Integrantes del TEAM NOCHE:
 <hr/>
 <h2>Configuraciones necesarias para el proyecto:</h2>
 <br>
+Descargar el repo y en la carpeta raiz ejecutar npm install, con este comando se instalaran todos los paquetes del package.json
+<br>
 <h4>Crear un archivo .env y crear las siguientes variables de entorno:</h4>
+<br>
 <br>
 MONGO_URI=mongodb+srv://Usuario:UMTs66E6mu28OaAM@cluster0.m2136tx.mongodb.net/mytestdb?retryWrites=true&w=majority
 <br>
+<br>
 SESSION_SECRET=asd123esdawe1513
+<br>
 <br>
 STRIPE_PRIVATE_KEY=sk_test_51OB3v1G3tCEFHGjmT7FsHmTfUfUIyDCH2Y7sbMijsh0FFEdVuYrvpPI1r0hgptRxW6QYHcmixx0giOFZIYivuAKq00d7BXJi7h
 <br>
+<br>
 GMAIL_EMAIL=pruebas.team.noche@gmail.com
+<br>
 <br>
 GMAIL_PASSWORD=jjhw kzwt qyde esjb
 <br>
