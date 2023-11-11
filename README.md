@@ -42,6 +42,16 @@ GMAIL_EMAIL=pruebas.team.noche@gmail.com
 GMAIL_PASSWORD=jjhw kzwt qyde esjb
 <br>
 <hr/>
+<h4>>Para la prueba de pago usar los siguentes datos:</h4
+<br>
+Tarjeta: 4242 4242 4242 4242
+<br>
+Fecha vencimiento: 01/25 
+<br>
+Codigo de validacion: 123
+<br>
+Codigo Postal: 12345
+<hr/>
 <h2>Capturas</h2>
 <hr/>
 HOME
