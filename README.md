@@ -15,7 +15,25 @@ Integrantes del TEAM NOCHE:
 • [Soriano, Marlene](https://github.com/Marlenesoriano)  
 • [Suarez, Carlos Hernan](https://github.com/Hernan-DOS)   
 • [Videla, Franco](https://github.com/odin1301)
-
+<hr/>
+<h4>Tecnoligias usadas:</h4>
+<br>
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30" alt="express logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="30" alt="mongodb logo"  />
+  <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  />
+  <img width="12" />
+</div>
+<hr/>
+<br>
 <img src="img-readme/tiger%20gym.png">
 
 <a href="https://github.com/CodeSystem2022/E-commerce-4-semestre-Team-Noche/blob/main/img-readme/BRIEFING%20TEAM%20NOCHE.pdf"><h1>Brief del proyecto</h1></a>
@@ -42,7 +60,7 @@ GMAIL_EMAIL=pruebas.team.noche@gmail.com
 GMAIL_PASSWORD=jjhw kzwt qyde esjb
 <br>
 <hr/>
-<h4>>Para la prueba de pago usar los siguentes datos:</h4
+<h4>Para la prueba de pago usar los siguentes datos:</h4
 <br>
 Tarjeta: 4242 4242 4242 4242
 <br>
