@@ -310,3 +310,167 @@ hr.gradient-style {
 .container.cart {
   margin: 1em auto;
 }
+
+
+.img-small {
+  max-width: 50%;
+  /*height: -5%;*/
+  margin: 2px;
+}
+
+.qty-display {
+  padding: 3px;
+  border: 1px solid rgb(54, 54, 54);
+  border-radius: 5px;
+}
+
+.fa-plus-square {
+  color: var(--green);
+  font-size: 25px;
+  margin: 2px;
+}
+
+.fa-minus-square {
+  color: var(--dark-orange);
+  font-size: 25px;
+  margin: 2px;
+}
+
+.fa-shopping-cart {
+  font-size: 22px;
+  padding-top: 0.3em;
+}
+
+/* FOOTER */
+
+ul {
+  list-style: none;
+}
+
+.white-links {
+  margin-left: 2.5em;
+}
+.white-links a {
+  font-size: 14px;
+  color: var(--ivory);
+  margin-right: 1em;
+}
+.white-links a:hover {
+  color: var(--light-blue) !important;
+}
+.footer-title {
+  font-weight: 300;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+#contact {
+  text-align: left;
+  vertical-align: middle;
+  align-items: center;
+  color: var(--ivory);
+  background-color: var(--black);
+  padding: 1em 1em 0.2em 1em;
+  border-bottom: 5px var(--dark-blue) solid;
+}
+.bottom-footer {
+  font-size: 14px;
+  padding: 1em 1.5em;
+  color: var(--ivory);
+  background-color: #1a1a1a;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* STRIPE ELEMENTS FOR CARD PAYMENT */
+.StripeElement {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 6px;
+  padding: 10px 12px;
+
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+/* MEDIA QUERY */
+/* XS SCREENS */
+@media only screen and (max-width: 576px) {
+  .card img {
+    height: 17em;
+  }
+  .controls-top h3 {
+    font-size: 20px;
+  }
+  .controls-top .fa {
+    font-size: 12px;
+  }
+  .hero-text h1 {
+    font-size: 25px;
+  }
+}
+
+/* SM SCREENS */
+@media only screen and (max-width: 768px) {
+  .right-nav {
+    justify-content: center;
+  }
+  .search-container {
+    width: 80%;
+    margin: auto;
+  }
+  .logo-container {
+    transform: translateX(0em);
+    margin: 0.5em auto;
+  }
+  .white-links {
+    margin-left: 0px;
+  }
+  .hero-text {
+    padding-top: 8%;
+  }
+}
+
+/* MD SCREENS */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .col-md-3 {
+    margin: 10px;
+  }
+  .circle-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
