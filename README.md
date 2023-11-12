@@ -16,7 +16,7 @@ Integrantes del TEAM NOCHE:
 • [Suarez, Carlos Hernan](https://github.com/Hernan-DOS)   
 • [Videla, Franco](https://github.com/odin1301)
 <hr/>
-<h4>Tecnoligias usadas:</h4>
+<h4>Tecnologias usadas:</h4>
 <br>
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
