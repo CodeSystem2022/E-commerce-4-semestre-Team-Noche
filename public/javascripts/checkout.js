@@ -1,8 +1,8 @@
 
-// Create a Stripe client.
-const stripe = Stripe("pk_test_Nw7zXh6zu9SXKrzk7KDxKUiV004Ly59ywq");
+// Se crea un cliente Stripe.
+const stripe = Stripe("pk_test_51OB3v1G3tCEFHGjmhYETu4GaZq1EhRvngHXtGV4cFrSlwmi179LEOJYqz4v2VdA298QNjjnlD209xAojEW8ytfjC001aVA9IIY");
 
-// Create an instance of Elements.
+// Crea una instancia del Element.
 const elements = stripe.elements();
 
 const style = {
@@ -18,13 +18,13 @@ const style = {
   },
 };
 
-// Create an instance of the card Element.
+// Crear una instancia de la tarjeta. 
 const card = elements.create("card", { style: style });
 
-// Add an instance of the card Element into the `card-element` <div>.
+// Agregue una instancia del elemento de tarjeta al `card-element` <div>.
 card.mount("#card-element");
 
-// Handle real-time validation errors from the card Element.
+// Manejar errores de validación en tiempo real de la tarjeta.
 card.addEventListener("change", function (event) {
   const displayError = document.getElementById("card-errors");
   if (event.error) {
@@ -34,7 +34,7 @@ card.addEventListener("change", function (event) {
   }
 });
 
-// Handle form submission.
+// Manejar el envío de formularios.
 const $form = $("#checkout-form");
 
 $form.submit(function (event) {
@@ -47,19 +47,19 @@ $form.submit(function (event) {
 
   stripe.createToken(card, extraDetails).then(function (result) {
     if (result.error) {
-      $form.find("button").prop("disabled", false); // Re-enable submission
+      $form.find("button").prop("disabled", false); // Volver a habilitar el envío
     } else {
-      // Send the token to your server.
+      // Envía el token a tu servidor.
       stripeTokenHandler(result.token);
     }
   });
 });
 
-// Submit the form with the token ID.
+// Envíe el formulario con el ID del token.
 function stripeTokenHandler(token) {
-  // Insert the token ID into the form so it gets submitted to the server
+  // Inserte el ID del token en el formulario para que se envíe al servidor.
   $form.append($('<input type="hidden" name="stripeToken" />').val(token.id));
-  // Submit the form
+  // Envía el formulario
   $form.get(0).submit();
 }
 
